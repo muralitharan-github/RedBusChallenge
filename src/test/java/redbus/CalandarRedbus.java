@@ -18,8 +18,7 @@ public class CalandarRedbus {
    public static ArrayList<String> getWeekEndDates(String month) {
 
       ArrayList<String> weekendList1 = new ArrayList<String>();
-      String searchingMonth = driver
-            .findElement(By.cssSelector("div[class$='hHKFiR']>div:nth-child(1)>div:nth-child(2)")).getText();
+      String searchingMonth = driver.findElement(By.cssSelector("div[class$='hHKFiR']>div:nth-child(1)>div:nth-child(2)")).getText();
 
       while (!searchingMonth.contains(month)) {
          System.out.println(
